@@ -2,7 +2,6 @@ body{
     font-family: "Roboto";
     font-size: 14px;
     line-height: 1.5;
-
 }
 
 .header {
@@ -29,6 +28,9 @@ body{
         }
         ul > li {
             margin-right: 30px;
+        }
+        ul > li:not(:last-child)::after{
+           margin-right: 0;
         }
         .box {
             display: flex;
@@ -63,4 +65,17 @@ body{
             padding: 5px 20px;
             margin-top: 20px;
             margin-bottom: 20px;
+        }
+         h1+section{
+        background-color: moccasin;
+       }
+        .link{
+            color: white;
+            background-color: rebeccapurple;
+            padding: 8px 15px 8px 15px;
+        }
+        .footer{
+            font-size: 13px;
+            padding-right: 20px;
+            padding-left: 20px; 
         }
